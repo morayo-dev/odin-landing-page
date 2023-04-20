@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+:root {
+  /* BACKGROUND COLOR */
+  --DARK-BG-COLOR: #1F2937;
+
+  /* COLOR */
+  --HEADER-LINK-COLOR: #E5E7EB;
+  --HERO-SEC-COLOR: #E5E7EB;
+  --HEADER-LOGO-COLOR: #F9FAF8;
+  --HERO-MAIN-COLOR: #F9FAF8;
+
+
+  /* FONT SIZE */
+  --HERO-MAIN-FS: 48px;
+  --HERO-SEC-FS: 18px;
+  --HEADER-LINK-FS: 18px;
+  --HEADER-LOGO-FS: 24px;
+
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+/* Header styles */
+
+header {
+  background-color: var(--DARK-BG-COLOR);
+}
+
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar h2,
+ul {
+  margin: 0.8rem 0 5rem 0;
+
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 7rem;
+}
+
+.navbar ul li {
+  margin-inline: 0.5rem;
+}
+
+.navbar h2 {
+  font-size: var(--HEADER-LOGO-FS);
+  color: var(--HEADER-LOGO-COLOR);
+  margin-left: 5rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--HEADER-LINK-COLOR);
+  font-size: var(--HEADER-LINK-FS);
+}
+
+/* Hero Body */
+
+.hero-body-container {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 50px;
+  ;
+}
+
+.hero-body-container img {
+  width: 650px;
+  height: 300px;
+  margin-right: 5rem;
+}
+
+.hero-body-container .text-signup-container {
+  margin-left: 4rem;
+  font-size: var(--HERO-MAIN-FS);
+  color: var(--HERO-MAIN-COLOR);
+  margin-bottom: 3rem;
+  font-weight: bolder;
+}
+
+.text-signup-container p {
+  font-size: var(--HERO-SEC-FS);
+  color: var(--HERO-SEC-COLOR);
+  font-weight: lighter;
+}
+
+.header-button {
+  background-color: #3882F6;
+  color: var(--HERO-MAIN-COLOR);
+  font-size: var(--HERO-SEC-FS);
+  padding: 0.87rem 2rem 0.87rem 2rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+/* Random Info Section */
+
+.random-info h2 {
+  font-size: 36px;
+  color: #1F2937;
+}
+
+.random-info p {
+  font-size: var(--HERO-SEC-FS);
+  margin-top: 1rem;
+}
+
+.random-info h2 {
+  text-align: center;
+}
+
+.random-info-container {
+  margin: 3rem auto;
+  display: flex;
+  gap: 40px;
+  width: 800px;
+  margin-inline: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.random-info-box {
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border: 5px solid #3882f6;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+/* Quote Section */
+
+.quote-container {
+  background-color: #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.quote {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4rem 0;
+}
+
+.quote p {
+  font-size: 36px;
+  color: #1F2937;
+}
+
+.quote-author {
+  display: block;
+  width: 100%;
+  text-align: end;
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: 2rem;
+}
+
+/* Call To Action Section */
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  display: center;
+}
+
+.cta-outer-container {
+  display: flex;
+  gap: 50px;
+  background-color: #3882F6;
+  justify-content: space-evenly;
+  padding: 3rem;
+  margin: 7rem;
+  border-radius: 10px;
+}
+
+.cta-outer-container .text-content {
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-outer-container .text-content .main-text {
+  font-weight: bold;
+  color: var(--HERO-MAIN-COLOR);
+
+}
+
+.cta-outer-container .text-content .subtext {
+  color: var(--HERO-SEC-COLOR);
+  font-size: 24px;
+
+}
+
+
+.cta-signup {
+  border: 1px solid var(--HEADER-LOGO-COLOR);
+  border-radius: 20px;
+  color: #E5E7EB;
+  background-color: #3882F6;
+  padding: 0 3rem;
+
+}
+
+footer {
+  background-color: var(--DARK-BG-COLOR);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  padding: 3rem;
+  color: var(--HEADER-LINK-COLOR);
+  font-size: var(--HERO-SEC-FS);
+}
