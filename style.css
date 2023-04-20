@@ -62,7 +62,11 @@ ul {
 }
 
 .navbar ul li {
-  margin-inline: 0.5rem;
+  margin-inline: 2.5rem;
+}
+
+.navbar ul li a:hover {
+  color: var(--HEADER-LOGO-COLOR);
 }
 
 .navbar h2 {
